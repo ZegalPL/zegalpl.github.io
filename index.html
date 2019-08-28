@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,12 +6,10 @@
     <meta name="author" content="Piotr Zęgota">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Sail-IT.pro</title>
+    <title>Sail-IT</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
 
@@ -21,17 +18,28 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Sail-IT.pro</h3>
+          <h3 class="masthead-brand">Sail-IT</h3>
+          <p>
+            <button onclick="$.MultiLanguage('language.json', 'pl')" class="btn">Pl</button>
+            <button onclick="$.MultiLanguage('language.json', 'en')" class="btn">En</button>
+          </p>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Technology</a>
+            <a id="navlink1" class="nav-link active" href="#"></a>
+            <a id="navlink2" class="nav-link" href="#"></a>
+            <a id="navlink3" class="nav-link" href="#"></a>          <nav class="nav nav-masthead justify-content-center">
+              <a id="navlink1" class="nav-link active" href="#"></a>
+              <a id="navlink2" class="nav-link" href="#"></a>
+              <a id="navlink3" class="nav-link" href="#"></a>
+              <a id="navlink4" class="nav-link" href="#"></a>
+            </nav>
+            <a id="navlink4" class="nav-link" href="#"></a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Sail-IT.pro</h1>
-        <p class="lead">DevOps consultancy done right.</p>
+        <h1 class="cover-heading">Sail-IT</h1>
+        <p id="mottotext1" class="lead"></p>
         <p class="lead">
           <a href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#115;&#97;&#105;&#108;&#45;&#105;&#116;&#46;&#112;&#114;&#111;?subject=WebInquiry" class="btn btn-lg btn-secondary">Mail Us!</a>
         </p>
@@ -39,18 +47,21 @@
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>.</p>
+          <p>&copy; Sail-IT 2019</p>
         </div>
       </footer>
     </div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="jquery.MultiLanguage.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $.MultiLanguage('language.json');
+    })
+    </script>
+
   </body>
 </html>
