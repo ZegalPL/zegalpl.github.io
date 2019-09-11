@@ -1,16 +1,3 @@
-jQuery(document).ready(function($) {
-
-	'use strict';
-
-	/************** Mixitup (Filter Projects) *********************/
-    	$('.projects-holder').mixitup({
-            effects: ['fade','grayscale'],
-            easing: 'snap',
-            transitionSpeed: 400
-        });
-
-});
-
 var mparts = ["kontakt", "sail-it", "pro", ".", "@"];
 var mhashed = mparts[0] + mparts[4] + mparts[1] + mparts[3] + mparts[2];
 document.getElementById("mhashed2").innerHTML=mhashed;
