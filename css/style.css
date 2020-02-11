@@ -1,0 +1,83 @@
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    min-height: 75rem;
+    font-size: 4vw;
+    padding-top: 4.5rem;
+    color: #2e3192;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+p {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.highlights-section {
+    background: #2e3192;
+    color: #fff;
+}
+
+.footer-section {
+    background: #2e3192;
+    color: #fff;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.header-section {
+    font-size: 12vw;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+/* responsive */
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header-section {
+        font-size: 10vw;
+    }
+    body {
+        font-size: 3vw;
+    }
+    .footer-section {
+        font-size: 3vw;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header-section {
+        font-size: 10vw;
+    }
+    body {
+        font-size: 2vw;
+    }
+    .footer-section {
+        font-size: 2vw;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .header-section {
+        font-size: 7vw;
+    }
+    body {
+        font-size: 1vw;
+    }
+    .footer-section {
+        font-size: 1vw;
+    }
+}
