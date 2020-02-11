@@ -1,9 +1,14 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: 'Ubuntu Mono', monospace;
-    min-height: 75rem;
-    font-size: 4vw;
+    font-size: 18px;
     padding-top: 4.5rem;
     color: #2e3192;
+    margin-bottom: 40px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -19,15 +24,19 @@ p {
     color: #fff;
 }
 
-.footer-section {
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
     background: #2e3192;
     color: #fff;
     text-align: center;
-    font-size: 4vw;
 }
 
-.header-section {
-    font-size: 12vw;
+.header-section h2{
+    font-size: 6em;
     text-align: center;
     font-weight: 900;
 }
@@ -45,39 +54,15 @@ p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .header-section {
-        font-size: 10vw;
-    }
-    body {
-        font-size: 3vw;
-    }
-    .footer-section {
-        font-size: 3vw;
-    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .header-section {
-        font-size: 10vw;
-    }
-    body {
-        font-size: 2vw;
-    }
-    .footer-section {
-        font-size: 2vw;
-    }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .header-section {
-        font-size: 7vw;
-    }
-    body {
-        font-size: 1vw;
-    }
-    .footer-section {
-        font-size: 1vw;
-    }
+
 }
