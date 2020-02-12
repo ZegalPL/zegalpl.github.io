@@ -22,6 +22,15 @@ p {
 .highlights-section {
     background: #2e3192;
     color: #fff;
+
+}
+
+.highlights-section i {
+    background: #2e3192;
+    color: #fff;
+    font-size: 6em;
+    text-align: center;
+    padding: 10px;
 }
 
 .footer {
@@ -40,6 +49,79 @@ p {
     text-align: center;
     font-weight: 900;
 }
+.header-section p{
+    font-size: 2em;
+    text-align: center;
+    font-weight: 900;
+}
+
+.contact-section form {
+    padding: 20px;
+    width: 100%;
+}
+
+.contact-section input {
+	padding-left: 15px;
+    border: 1px solid #2e3192;
+	outline: none;
+	height: 44px;
+	border-radius: 22px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-section textarea {
+	border-radius: 22px;
+	border: 1px solid #2e3192;
+	padding: 15px;
+    outline: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contact-section button {
+	text-decoration: none;
+	padding: 10px 18px;
+	display: inline-block;
+	border-radius: 24px;
+	text-transform: uppercase;
+	font-weight: 900;
+	background-color: #2e3192;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.contact-section button:hover {
+	color: #2e3192;
+	background-color: #fcd222;
+	transition: all 0.3s;
+}
+
+.contact-section .right-info {
+    padding: 20px;
+
+}
+
+.contact-section .right-info ul {
+	padding: 0;
+	list-style: none;
+}
+
+.contact-section .right-info ul i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.contact-section .right-info ul li {
+	display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-section .right-info ul li a {
+    text-decoration: none;
+    color: #2e3192;
+}
 
 
 /* responsive */
@@ -54,7 +136,9 @@ p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+    .contact-section .right-info {
+        padding: 40px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
