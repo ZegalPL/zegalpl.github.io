@@ -1,97 +1,129 @@
 <!doctype html>
 <html lang="pl-PL">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:300,400,600,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/4729e65dd3.js" crossorigin="anonymous"></script>
-    <meta name="author" content="sail-it Piotr Zegota">
-    <title> sail-it ~~~ &#128187;</title>
-    <link rel="icon" type="image/png" href="img/icon_square.png"/>
-    <meta property="og:title" content="sail-it ~~~ &#128187;" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="DevOps z Polski - wsparcie w Kubernetes, Docker, AWS Cloud, Linux, CI/CD..." />
-    <meta property="og:url" content="https://sail-it.pro" />
-    <meta property="og:image" content="https://sail-it.pro/img/preview.png" />
-  </head>
-  <body>
-    <section class="header-section">
-      <div class="container">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:300,400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/4729e65dd3.js" crossorigin="anonymous"></script>
+  <meta name="author" content="sail-it Piotr Zegota">
+  <title> sail-it ~~~ &#128187;</title>
+  <link rel="icon" type="image/png" href="img/icon_square.png" />
+  <meta property="og:title" content="sail-it ~~~ &#128187;" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description"
+    content="DevOps z Polski - wsparcie w Kubernetes, Docker, AWS Cloud, Linux, CI/CD..." />
+  <meta property="og:url" content="https://sail-it.pro" />
+  <meta property="og:image" content="https://sail-it.pro/img/preview.png" />
+</head>
+
+<body>
+  <section class="header-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><img src="img/logo.svg" alt=""></div>
+        <div class="col-md-8">
+          <h2>sail-it</h2>
+          <p>DevOps <i class="fas fa-user-ninja" title="ninja"></i> z Polski</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="highlights-section">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-3 col-sm-6"><i class="fab fa-docker"></i>
+          <p>Docker</p>
+        </div>
+        <div class="col-lg-3 col-sm-6"><i class="fab fa-aws"></i>
+          <p>AWS Cloud</p>
+        </div>
+        <div class="col-lg-3 col-sm-6"><i class="fab fa-linux"></i>
+          <p>Linux</p>
+        </div>
+        <div class="col-lg-3 col-sm-6"><i class="fab fa-jenkins"></i>
+          <p>CI/CD</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
           <div class="row">
-            <div class="col-md-4"><img src="img/logo.svg" alt=""></div>
-            <div class="col-md-8"><h2>sail-it</h2><p>DevOps <i class="fas fa-user-ninja" title="ninja"></i> z Polski</p></div>
+            <form class="gform"
+              action="https://script.google.com/macros/s/AKfycbygK57g09BaAoZeEU4bAvGF4cFAN1GLIprY3ycAMVKDq1Ir93o/exec"
+              method="post">
+              <div class="col-md-6">
+                <fieldset>
+                  <input name="name" type="text" class="form-control" id="name" placeholder="Jak masz na Imię?"
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset>
+                  <input name="email" type="email" class="form-control" id="email" placeholder="Podaj swój email."
+                    required>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Wpisz wiadomość..."
+                    required></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <div style="display:none" class="alert alert-success thankyou_message">
+                  <strong>Dziękujemy!</strong> Twoja wiadomość została wysłana.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="btn">Wyślij</button> <a target=_blank href="privacy/">Zasady ochrony danych osobowych.</a>
+                </fieldset>
+              </div>
+            </form>
           </div>
-      </div>
-    </section>
-    <section class="highlights-section">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-3 col-sm-6"><i class="fab fa-docker"></i><p>Docker</p></div>
-                <div class="col-lg-3 col-sm-6"><i class="fab fa-aws"></i><p>AWS Cloud</p></div>
-                <div class="col-lg-3 col-sm-6"><i class="fab fa-linux"></i><p>Linux</p></div>
-                <div class="col-lg-3 col-sm-6"><i class="fab fa-jenkins"></i><p>CI/CD</p></div>
-            </div>
         </div>
-    </section>
-    <section class="contact-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-              <div class="row">
-              <form class="gform" action="https://script.google.com/macros/s/AKfycbygK57g09BaAoZeEU4bAvGF4cFAN1GLIprY3ycAMVKDq1Ir93o/exec" method="post">
-                <div class="col-md-6">
-                  <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Jak masz na Imię?" required>
-                  </fieldset>
-                </div>
-                <div class="col-md-6">
-                  <fieldset>
-                    <input name="email" type="email" class="form-control" id="email" placeholder="Podaj swój email." required>
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Wpisz wiadomość..." required></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                    <div style="display:none" class="alert alert-success thankyou_message">
-                        <strong>Dziękujemy!</strong> Twoja wiadomość została wysłana.
-                    </div>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="btn">Wyślij</button>
-                  </fieldset>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="right-info">
-              <ul>
-                <li><a id="mhashed1" href="" target="_blank"><i class="fas fa-envelope fa-fw"></i><span id="mhashed2"></span></a></li>
-                <li><a id="thashed2" href="" target="_blank"><i class="fas fa-mobile-alt fa-fw"></i><span id="thashed1"></span></a></li>
-                <li><a href="https://www.facebook.com/sailit.pro" target="_blank"><i class="fab fa-facebook fa-fw"></i>facebook.com/sailit.pro</a></li>
-                <li><a href="https://www.linkedin.com/company/sailit/" target="_blank"><i class="fab fa-linkedin fa-fw"></i>linkedin.com/company/sailit</a></li>
-                <li><a href="https://wikipedia.org/wiki/Łódź" target="_blank"><i class="fas fa-map-marker-alt fa-fw"></i>Łódź, Polska</a></li>
-              </ul>
-            </div>
+        <div class="col-md-6">
+          <div class="right-info">
+            <ul>
+              <li><a id="mhashed1" href="" target="_blank"><i class="fas fa-envelope fa-fw"></i><span
+                    id="mhashed2"></span></a></li>
+              <li><a id="thashed2" href="" target="_blank"><i class="fas fa-mobile-alt fa-fw"></i><span
+                    id="thashed1"></span></a></li>
+              <li><a href="https://www.facebook.com/sailit.pro" target="_blank"><i
+                    class="fab fa-facebook fa-fw"></i>facebook.com/sailit.pro</a></li>
+              <li><a href="https://www.linkedin.com/company/sailit/" target="_blank"><i
+                    class="fab fa-linkedin fa-fw"></i>linkedin.com/company/sailit</a></li>
+              <li><a href="https://wikipedia.org/wiki/Łódź" target="_blank"><i
+                    class="fas fa-map-marker-alt fa-fw"></i>Łódź, Polska</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            sail-it &copy; 2020
-        </div>
-    </footer>
-    <script src="js/main.js"></script>
-    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5mdXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjmdVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      sail-it &copy; 2020
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5mdXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjmdVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

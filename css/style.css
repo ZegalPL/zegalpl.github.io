@@ -55,6 +55,25 @@ p {
     font-weight: 900;
 }
 
+.content-section h1{
+    font-size: 2em;
+    text-align: left;
+    font-weight: 900;
+}
+.content-section h2{
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: 900;
+}
+.content-section p{
+    font-size: 1em;
+    text-align: justify;
+}
+.content-section ul{
+    font-size: 1em;
+    text-align: justify;
+}
+
 .contact-section form {
     padding: 20px;
     width: 100%;
@@ -120,6 +139,10 @@ p {
 
 .contact-section .right-info ul li a {
     text-decoration: none;
+    color: #2e3192;
+}
+
+.contact-section a {
     color: #2e3192;
 }
 
