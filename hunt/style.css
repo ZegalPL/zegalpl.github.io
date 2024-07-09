@@ -5,6 +5,8 @@ html {
 
 body {
     font-family: "Garamond", serif;
+    font-weight: bold;
+    font-size: medium;
     padding-top: 1em;
     color: #815c38;
     background-color: #d9c6b5;
