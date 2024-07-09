@@ -1,0 +1,20 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Garamond", serif;
+    font-size: 5em;
+    padding-top: 4.5rem;
+    color: #815c38;
+    background-color: #d9c6b5;
+}
+
+.container{
+    width: 100%;
+}
+
+p {
+    text-align: center;
+  }
