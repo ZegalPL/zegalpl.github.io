@@ -1,87 +1,214 @@
 <!doctype html>
-<html lang="pl-PL">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('site_lang');
+        var browserLang = (navigator.language || '').toLowerCase();
+        var isPolishBrowser = browserLang.indexOf('pl') === 0;
+        if (saved !== 'en' && (saved === 'pl' || isPolishBrowser)) {
+          if (!location.pathname.startsWith('/pl/')) {
+            location.replace('/pl/');
+          }
+        }
+      } catch (e) {
+      }
+    })();
+  </script>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:300,400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/4729e65dd3.js" crossorigin="anonymous"></script>
   <meta name="author" content="sail-it Piotr Zegota">
-  <title> sail-it ~~~ &#128187;</title>
+  <title>sail-it ~~~ 💻</title>
   <link rel="icon" type="image/png" href="img/icon_square.png" />
-  <meta property="og:title" content="sail-it ~~~ &#128187;" />
+  <meta property="og:title" content="sail-it ~~~ 💻" />
   <meta property="og:type" content="website" />
-  <meta property="og:description"
-    content="DevOps z Polski - wsparcie w Kubernetes, Docker, AWS Cloud, Linux, CI/CD..." />
+  <meta name="description" content="DevOps expert from Poland - AWS, Kubernetes, Docker, Linux, CI/CD. 10+ years of cloud and on-prem experience." />
+  <meta property="og:description" content="DevOps expert from Poland - support in Kubernetes, Docker, AWS Cloud, Linux, CI/CD..." />
   <meta property="og:url" content="https://sail-it.pro" />
   <meta property="og:image" content="https://sail-it.pro/img/preview.png" />
 </head>
 
 <body>
-  <section class="header-section">
+  <section class="header-section" role="region" aria-label="Page header">
     <div class="container">
       <div class="row">
-        <div class="col-md-4"><img src="img/logo.svg" alt=""></div>
+        <div class="col-md-4"><img src="img/logo.svg" alt="sail-it logo"></div>
         <div class="col-md-8">
           <h2>sail-it</h2>
-          <p>DevOps <i class="fas fa-user-ninja" title="ninja"></i> z Polski</p>
+          <p>DevOps <i class="fas fa-user-ninja" title="ninja" aria-hidden="true"></i> from Poland</p>
+          <p class="header-sub">AWS &amp; Kubernetes &middot; 10+ years of experience</p>
+          <div class="lang-switch" aria-label="Language switcher"><a href="/" onclick="localStorage.setItem('site_lang','en')">EN</a> | <a href="/pl/" onclick="localStorage.setItem('site_lang','pl')">PL</a></div>
         </div>
       </div>
     </div>
   </section>
-  <section class="highlights-section">
+
+  <section class="highlights-section" role="region" aria-label="Core capabilities">
     <div class="container">
       <div class="row text-center">
-        <div class="col-lg-3 col-sm-6"><i class="fab fa-docker"></i>
-          <p>Docker</p>
+        <div class="col-lg-2 col-sm-4"><i class="fab fa-aws" aria-hidden="true"></i>
+          <p>AWS</p>
         </div>
-        <div class="col-lg-3 col-sm-6"><i class="fab fa-aws"></i>
-          <p>AWS Cloud</p>
+        <div class="col-lg-2 col-sm-4"><i class="fab fa-docker" aria-hidden="true"></i>
+          <p>Docker &amp; k8s</p>
         </div>
-        <div class="col-lg-3 col-sm-6"><i class="fab fa-linux"></i>
-          <p>Linux</p>
-        </div>
-        <div class="col-lg-3 col-sm-6"><i class="fab fa-jenkins"></i>
+        <div class="col-lg-2 col-sm-4"><i class="fas fa-code-branch" aria-hidden="true"></i>
           <p>CI/CD</p>
+        </div>
+        <div class="col-lg-2 col-sm-4"><i class="fas fa-cubes" aria-hidden="true"></i>
+          <p>IaC</p>
+        </div>
+        <div class="col-lg-2 col-sm-4"><i class="fas fa-shield-alt" aria-hidden="true"></i>
+          <p>SRE</p>
+        </div>
+        <div class="col-lg-2 col-sm-4"><i class="fas fa-chart-line" aria-hidden="true"></i>
+          <p>Monitoring</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="contact-section">
+
+  <section class="about-section" role="region" aria-label="Company overview and experience">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-           <img src="img/avatar.jpg" class="img-fluid" alt="">
+        <div class="col-12">
+          <p class="about-lead">We navigate cloud complexity together.</p>
+          <p>Sail-IT is a DevOps-focused company based in Lodz, Poland. Like a good navigator reading wind and currents, we know AWS and Kubernetes deeply and steer your infrastructure safely to its destination.</p>
+          <p>10+ years of hands-on delivery across startup and enterprise environments in fintech, e-commerce and telecommunications.</p>
+          <p>Experience gained in projects for:</p>
+          <ul class="company-list" aria-label="Companies served">
+            <li>HSBC</li>
+            <li>Aptiv</li>
+            <li>C&amp;F</li>
+            <li>XPAY</li>
+            <li>Finatix</li>
+            <li>SpeedApp</li>
+            <li>Idemia</li>
+            <li>Mobica</li>
+            <li>ITAKA</li>
+          </ul>
         </div>
-        <div class="col-md-6">
-          <div class="right-info">
+      </div>
+    </div>
+  </section>
+
+  <section class="delivery-section" role="region" aria-label="Services and contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h3>Services</h3>
+          <div id="servicesAccordion" class="services-accordion">
+            <div class="card">
+              <div class="card-header" id="serviceOneHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link" type="button" data-target="#serviceOne" aria-expanded="true" aria-controls="serviceOne" aria-label="Show AWS service details">
+                    <span><i class="fab fa-aws fa-fw"></i>AWS</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceOne" class="collapse show" aria-labelledby="serviceOneHeader" data-parent="#servicesAccordion">
+                <div class="card-body">We design and operate AWS platforms (EC2, IAM, EKS, ECS, RDS, S3, API Gateway) for mission-critical systems, including multi-region architectures and security hardening.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="serviceTwoHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo" aria-label="Show Docker and Kubernetes service details">
+                    <span><i class="fab fa-docker fa-fw"></i>Docker &amp; k8s</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceTwo" class="collapse" aria-labelledby="serviceTwoHeader" data-parent="#servicesAccordion">
+                <div class="card-body">From container build pipelines to production clusters, we deliver end-to-end container platforms using EKS/ECS, Karpenter, Rancher and OpenShift.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="serviceThreeHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree" aria-label="Show CI/CD service details">
+                    <span><i class="fas fa-code-branch fa-fw"></i>CI/CD</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceThree" class="collapse" aria-labelledby="serviceThreeHeader" data-parent="#servicesAccordion">
+                <div class="card-body">We automate the full path from commit to production with Jenkins, GitHub Actions and GitLab CI, including high-scale build environments.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="serviceFourHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-target="#serviceFour" aria-expanded="false" aria-controls="serviceFour" aria-label="Show Infrastructure as Code service details">
+                    <span><i class="fas fa-cubes fa-fw"></i>IaC</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceFour" class="collapse" aria-labelledby="serviceFourHeader" data-parent="#servicesAccordion">
+                <div class="card-body">Infrastructure as Code with Terraform and Terragrunt, supported by Ansible and Flux. We deliver reusable modules, standards and GitOps workflows.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="serviceFiveHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-target="#serviceFive" aria-expanded="false" aria-controls="serviceFive" aria-label="Show SRE service details">
+                    <span><i class="fas fa-shield-alt fa-fw"></i>SRE</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceFive" class="collapse" aria-labelledby="serviceFiveHeader" data-parent="#servicesAccordion">
+                <div class="card-body">We implement SRE practices such as SLO/SLA, error budgets and runbooks, especially in regulated environments where reliability and compliance are critical.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="serviceSixHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-target="#serviceSix" aria-expanded="false" aria-controls="serviceSix" aria-label="Show Monitoring service details">
+                    <span><i class="fas fa-chart-line fa-fw"></i>Monitoring</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceSix" class="collapse" aria-labelledby="serviceSixHeader" data-parent="#servicesAccordion">
+                <div class="card-body">We build observability with CloudWatch, Datadog, Grafana and Prometheus, and configure alerting/on-call workflows (e.g., PagerDuty).</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="contact-card" role="region" aria-labelledby="contact-heading">
+            <h3 id="contact-heading">Contact</h3>
             <ul>
-              <li><a id="mhashed1" href="" target="_blank"><i class="fas fa-envelope fa-fw"></i><span
-                    id="mhashed2"></span></a></li>
-              <li><a id="thashed2" href="" target="_blank"><i class="fas fa-mobile-alt fa-fw"></i><span
-                    id="thashed1"></span></a></li>
-              <li><a href="https://www.facebook.com/sailit.pro" target="_blank"><i
-                    class="fab fa-facebook fa-fw"></i>facebook.com/sailit.pro</a></li>
-              <li><a href="https://www.linkedin.com/company/sailit/" target="_blank"><i
-                    class="fab fa-linkedin fa-fw"></i>linkedin.com/company/sailit</a></li>
-              <li><a href="https://wikipedia.org/wiki/Łódź" target="_blank"><i
-                    class="fas fa-map-marker-alt fa-fw"></i>Łódź, Polska</a></li>
+              <li><a id="mhashed1" href="" target="_blank" rel="noopener noreferrer" aria-label="Send email"><i class="fas fa-envelope fa-fw" aria-hidden="true"></i><span id="mhashed2" aria-live="polite"></span></a></li>
+              <li><a id="thashed2" href="" target="_blank" rel="noopener noreferrer" aria-label="Call by phone"><i class="fas fa-mobile-alt fa-fw" aria-hidden="true"></i><span id="thashed1" aria-live="polite"></span></a></li>
+              <li><a href="https://www.facebook.com/sailit.pro" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile (opens in a new tab)"><i class="fab fa-facebook fa-fw" aria-hidden="true"></i>facebook.com/sailit.pro</a></li>
+              <li><a href="https://www.linkedin.com/company/sailit/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i>linkedin.com/company/sailit</a></li>
+              <li><a href="https://wikipedia.org/wiki/Lodz" target="_blank" rel="noopener noreferrer" aria-label="Location: Lodz, Poland (opens in a new tab)"><i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i>Lodz, Poland</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <footer class="footer">
+
+  <footer class="footer" role="contentinfo" aria-label="Page footer">
     <div class="container">
-      sail-it &copy; 2020
+      sail-it &copy; 2026
     </div>
   </footer>
+
   <script src="js/main.js"></script>
-  <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5mdXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -91,6 +218,39 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjmdVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var accordion = document.getElementById('servicesAccordion');
+      if (!accordion) return;
+
+      var buttons = accordion.querySelectorAll('button[data-target]');
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var targetSelector = btn.getAttribute('data-target');
+          var target = document.querySelector(targetSelector);
+          if (!target) return;
+
+          var isOpen = target.classList.contains('show');
+
+          buttons.forEach(function (otherBtn) {
+            var otherTarget = document.querySelector(otherBtn.getAttribute('data-target'));
+            if (otherTarget) {
+              otherTarget.classList.remove('show');
+            }
+            otherBtn.classList.add('collapsed');
+            otherBtn.setAttribute('aria-expanded', 'false');
+          });
+
+          if (!isOpen) {
+            target.classList.add('show');
+            btn.classList.remove('collapsed');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

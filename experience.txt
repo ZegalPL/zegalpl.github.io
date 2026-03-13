@@ -1,0 +1,114 @@
+PIOTR ZĘGOTA
+AWS and Kubernetes focused DevOps expert with 10+
+years of experience in cloud and on-premises.
+Personal Profile
+DevOps/SRE engineer with 10+ years
+experience delivering AWS + Kubernetes
+platforms. Led GitOps/IaC adoption
+(Terraform/Terragrunt/Flux), operated
+EKS/ECS at scale, and improved
+reliability, security posture, and cloud
+cost efficiency across regulated
+environments.
+Get in Touch
+Phone: +48 510 727 610
+Email: piotr.zegota@sail-it.pro
+LinkedIn: linkedin.com/in/piotrzegota
+Tools and Skills
+AWS
+EC2, IAM, Secrets Manager, S3, EKS, ECS,
+Lambda, ASG, Api Gateway, RDS
+Infrastructure as Code
+Terraform, Terragrunt, TF modules,
+Ansible, SaltStack 
+Containers & Orchestration
+EKS, ECS, Docker, Kubernetes, Flux, Argo,
+Karpenter, Rancher, OpenShift
+CI/CD
+Jenkins, GitHub, GitLab, Azure DevOps
+(VSTS), AWX, Bitbucket, Artifactory
+Observability
+Datadog, CloudWatch, Zabbix, Grafana,
+Prometheus, Splunk, Graylog, Kibana,
+PagerDuty, Loki
+Networking
+VPC, Route 53, ALB, TGW, DNS, IPv4
+Security
+IAM, KMS, CloudTrail, Nessus
+Virtualization
+Hyper-V, Xen, Proxmox, Vagrant
+Data
+Postgres, AWS Glue, PySpark, MySQL,
+MSSQL
+Scripting and Coding
+Bash, Python, Java
+Other
+Anka, OpenStack, Linux, Git, JIRA
+AI
+Copilot for improving readability of Jira
+tasks, Research outsourcing,
+understanding legacy parts of codebase,
+demos breakdowns
+Education
+Lodz University of Technology
+2011 - 2014  Computer Science.
+2008 - 2010  Automation and Robotics.
+Work Experience
+HSBC - Senior DevOps & Team Lead | 2023 - present
+Own the CI/CD platform for mobile banking apps across 27 markets. Operate and evolve a
+Jenkins estate running 5k+ builds/day with ephemeral agents scaling to 500+ concurrent
+executors. Drive GitOps and IaC adoption (Terragrunt/Terraform, Ansible, Flux) and EKS
+automation (Karpenter) to improve reliability, security posture, and cost efficiency. Co-lead a
+6‑engineer Infra team and mentor engineers across APAC (incl. China).
+Key Achievements: 
+Migrated CloudBees Jenkins to OSS Jenkins, saving ~$40M annually in licensing while
+maintaining service agreements.
+Designed and delivered a multi‑region AWS architecture split (EU + AP) to reduce latency
+and inter‑region traffic; authored the migration runbook and led delivery.
+Prepared and executed AppCenter exit for mobile app testing without interruption.
+Replaced static EKS node groups with Karpenter-driven provisioning, improving node
+utilization by ~20% and reducing compute spend.
+Managed a fleet of 60+ Mac minis running Anka for iOS CI builds; executed controlled
+macOS upgrades (ventura/sonoma/sequoia) remotely in a locked-down environment
+(Zscaler/Trellix/Jamf) with zero physical access, improving compliance and platform
+resilience via Jamf-enforced configuration baselines.
+Strengthened access controls using least privilege (IAM/RBAC), org rulesets, and federated
+SSO; reduced permission sprawl and audit findings.
+Account level separation strategy with AWS Organisations.
+XPAY - Senior Platform & Data engineer | 2022 - 2023
+Built AWS infrastructure-as-code with Terraform to support a multi-brand prepaid card
+platform.
+Implemented GitOps-style CI/CD with GitLab deploying workloads to ECS
+Delivered ETL pipelines using S3, RDS, AWS Glue, and PySpark to support reporting and
+transaction auditing workflows.
+Strengthened security posture via IAM hardening (least privilege, role separation) and
+improved observability using CloudWatch + Datadog APM, PagerDuty tiered on-call roll.
+Result: onboarded 10+ brands in the first week post go-live.
+Finatix - Senior DevOps consultant | 2021 - 2022
+Delivered an MVP of developer portal - unified API layer for an automotive client,
+standardizing service onboarding and self-service environment provisioning.
+Automated AWS infrastructure with Terraform, including VPC, API Gateway, and ECS
+service scaffolding.
+Implemented CI/CD pipelines in GitLab
+SpeedApp - Cloud Engineer | 2020 - 2021
+Built and operated an AWS-hosted Kubernetes (Rancher) platform for a medical sample
+scheduling/processing suite (Covid vaccine R&D support).
+Owned cluster lifecycle and day-2 operations (upgrades, scaling, backups, incident
+response); automated provisioning and configuration with Ansible.
+Implemented CI/CD in Azure DevOps to deploy services to Kubernetes and manage
+environment promotion (dev/stage/prod).
+Idemia - DevOps & SRE | 2019 - 2020
+Operated and evolved a Kubernetes-based PaaS for fintech/telco customers; automated
+build/release and platform ops across AWS + OpenStack/bare metal. PCI DSS compliant.
+Global SRE for identity verification products in multiple regions; supported hybrid AWS +
+private DC deployments under security/compliance constraints.
+Helped introduce error budgeting and SLO’s and SLA’s.
+Mobica - IT administrator & DevOps engineer | 2015 - 2019
+Owned BAU/KTLO operations; improved service reliability via monitoring, patching
+routines, and automation scripts.
+Built/operated an on‑prem Hyper‑V virtualized environment; introduced early IaC/CI
+practices to standardize provisioning and releases.
+ITAKA - Implementation Specialist | 2013 - 2015
+Implemented ERP solutions for SMB clients
+Administered Windows Server environments (Active Directory, Microsoft SQL Server,
+Exchange); supported backups/patching and incident resolution.

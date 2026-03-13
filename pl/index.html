@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('site_lang');
+        if (saved === 'en' && location.pathname.startsWith('/pl/')) {
+          location.replace('/');
+        }
+      } catch (e) {
+      }
+    })();
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:300,400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/4729e65dd3.js" crossorigin="anonymous"></script>
+  <meta name="author" content="sail-it Piotr Zęgota">
+  <title>sail-it ~~~ 💻</title>
+  <link rel="icon" type="image/png" href="../img/icon_square.png" />
+  <meta property="og:title" content="sail-it ~~~ 💻" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="DevOps z Polski – wsparcie w Kubernetes, Docker, AWS Cloud, Linux, CI/CD. Ponad 10 lat doświadczenia. sail-it Piotr Zęgota, Łódź." />
+  <meta property="og:description" content="DevOps z Polski - wsparcie w Kubernetes, Docker, AWS Cloud, Linux, CI/CD..." />
+  <meta property="og:url" content="https://sail-it.pro/pl/" />
+  <meta property="og:image" content="https://sail-it.pro/img/preview.png" />
+</head>
+
+<body>
+  <section class="header-section" role="region" aria-label="Nagłówek strony">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><img src="../img/logo.svg" alt="sail-it logo"></div>
+        <div class="col-md-8">
+          <h2>sail-it</h2>
+          <p>DevOps <i class="fas fa-user-ninja" title="ninja" aria-hidden="true"></i> z Polski</p>
+          <p class="header-sub">AWS &amp; Kubernetes &middot; 10+ lat doświadczenia</p>
+          <div class="lang-switch" aria-label="Przełącznik języka"><a href="/" onclick="localStorage.setItem('site_lang','en')">EN</a> | <a href="/pl/" onclick="localStorage.setItem('site_lang','pl')">PL</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="highlights-section" role="region" aria-label="Główne kompetencje">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-2 col-sm-4"><i class="fab fa-aws" aria-hidden="true"></i>
+          <p>AWS</p>
+        </div>
+        <div class="col-lg-2 col-sm-4"><i class="fab fa-docker" aria-hidden="true"></i>
+          <p>Docker &amp; k8s</p>
+        </div>
+        <div class="col-lg-2 col-sm-4"><i class="fas fa-code-branch" aria-hidden="true"></i>
+          <p>CI/CD</p>
+        </div>
+        <div class="col-lg-2 col-sm-4"><i class="fas fa-cubes" aria-hidden="true"></i>
+          <p>IaC</p>
+        </div>
+        <div class="col-lg-2 col-sm-4"><i class="fas fa-shield-alt" aria-hidden="true"></i>
+          <p>SRE</p>
+        </div>
+        <div class="col-lg-2 col-sm-4"><i class="fas fa-chart-line" aria-hidden="true"></i>
+          <p>Monitoring</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-section" role="region" aria-label="Opis firmy i doświadczenie">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="about-lead">Wspólnie nawigujemy przez złożoność chmury.</p>
+          <p>Sail-IT to specjalistyczna firma DevOps z Łodzi. Tak jak dobry nawigator czyta wiatr i prądy morskie, my znamy każdy zakamarek AWS i Kubernetes i prowadzimy infrastrukturę Twojej firmy bezpiecznie do celu.</p>
+          <p>Ponad 10 lat doświadczeń na pełnym morzu chmury: od startupów po globalne organizacje z branży fintech, e-commerce i telekomunikacji.</p>
+          <p>Doświadczenie zdobywane m.in. w:</p>
+          <ul class="company-list" aria-label="Firmy, dla których realizowano projekty">
+            <li>HSBC</li>
+            <li>Aptiv</li>
+            <li>C&amp;F</li>
+            <li>XPAY</li>
+            <li>Finatix</li>
+            <li>SpeedApp</li>
+            <li>Idemia</li>
+            <li>Mobica</li>
+            <li>ITAKA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="delivery-section" role="region" aria-label="Usługi i kontakt">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h3>Zakres usług</h3>
+          <div id="servicesAccordion" class="services-accordion">
+            <div class="card">
+              <div class="card-header" id="serviceOneHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link" type="button" data-target="#serviceOne" aria-expanded="true" aria-controls="serviceOne" aria-label="Pokaż szczegóły usługi AWS">
+                    <span><i class="fab fa-aws fa-fw"></i>AWS</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceOne" class="collapse show" aria-labelledby="serviceOneHeader" data-parent="#servicesAccordion">
+                <div class="card-body">Projektujemy i utrzymujemy środowiska AWS (EC2, IAM, EKS, ECS, RDS, S3, API Gateway) dla systemów krytycznych. Wdrażamy architektury multi-region i poprawiamy bezpieczeństwo.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="serviceTwoHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo" aria-label="Pokaż szczegóły usługi Docker i Kubernetes">
+                    <span><i class="fab fa-docker fa-fw"></i>Docker &amp; k8s</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceTwo" class="collapse" aria-labelledby="serviceTwoHeader" data-parent="#servicesAccordion">
+                <div class="card-body">Budujemy i prowadzimy platformy kontenerowe end-to-end: od obrazów i pipeline'ów po produkcyjne klastry Kubernetes (EKS/ECS, Karpenter, Rancher, OpenShift).</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="serviceThreeHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree" aria-label="Pokaż szczegóły usługi CI/CD">
+                    <span><i class="fas fa-code-branch fa-fw"></i>CI/CD</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceThree" class="collapse" aria-labelledby="serviceThreeHeader" data-parent="#servicesAccordion">
+                <div class="card-body">Automatyzujemy proces od commita do wdrożenia w Jenkins, GitHub Actions i GitLab CI, również dla środowisk o bardzo dużej skali.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="serviceFourHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-target="#serviceFour" aria-expanded="false" aria-controls="serviceFour" aria-label="Pokaż szczegóły usługi Infrastructure as Code">
+                    <span><i class="fas fa-cubes fa-fw"></i>IaC</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceFour" class="collapse" aria-labelledby="serviceFourHeader" data-parent="#servicesAccordion">
+                <div class="card-body">Infrastructure as Code z Terraform i Terragrunt, wspierane przez Ansible i Flux. Dostarczamy moduły, standardy i procesy GitOps.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="serviceFiveHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-target="#serviceFive" aria-expanded="false" aria-controls="serviceFive" aria-label="Pokaż szczegóły usługi SRE">
+                    <span><i class="fas fa-shield-alt fa-fw"></i>SRE</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceFive" class="collapse" aria-labelledby="serviceFiveHeader" data-parent="#servicesAccordion">
+                <div class="card-body">Wdrażamy praktyki SRE: SLO/SLA, error budgets i runbooki. Szczególnie dobrze odnajdujemy się w środowiskach regulowanych.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="serviceSixHeader">
+                <h4 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-target="#serviceSix" aria-expanded="false" aria-controls="serviceSix" aria-label="Pokaż szczegóły usługi Monitoring">
+                    <span><i class="fas fa-chart-line fa-fw"></i>Monitoring</span>
+                    <i class="fas fa-chevron-down chevron" aria-hidden="true"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="serviceSix" class="collapse" aria-labelledby="serviceSixHeader" data-parent="#servicesAccordion">
+                <div class="card-body">Budujemy observability oparte o CloudWatch, Datadog, Grafana i Prometheus. Konfigurujemy alerting i on-call (PagerDuty).</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="contact-card" role="region" aria-labelledby="contact-heading">
+            <h3 id="contact-heading">Kontakt</h3>
+            <ul>
+              <li><a id="mhashed1" href="" target="_blank" rel="noopener noreferrer" aria-label="Wyślij email"><i class="fas fa-envelope fa-fw" aria-hidden="true"></i><span id="mhashed2" aria-live="polite"></span></a></li>
+              <li><a id="thashed2" href="" target="_blank" rel="noopener noreferrer" aria-label="Zadzwoń"><i class="fas fa-mobile-alt fa-fw" aria-hidden="true"></i><span id="thashed1" aria-live="polite"></span></a></li>
+              <li><a href="https://www.facebook.com/sailit.pro" target="_blank" rel="noopener noreferrer" aria-label="Profil Facebook (otwiera się w nowej karcie)"><i class="fab fa-facebook fa-fw" aria-hidden="true"></i>facebook.com/sailit.pro</a></li>
+              <li><a href="https://www.linkedin.com/company/sailit/" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn (otwiera się w nowej karcie)"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i>linkedin.com/company/sailit</a></li>
+              <li><a href="https://wikipedia.org/wiki/Łódź" target="_blank" rel="noopener noreferrer" aria-label="Lokalizacja Łódź, Polska (otwiera się w nowej karcie)"><i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i>Łódź, Polska</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" role="contentinfo" aria-label="Stopka strony">
+    <div class="container">
+      sail-it &copy; 2026
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5mdXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjmdVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var accordion = document.getElementById('servicesAccordion');
+      if (!accordion) return;
+
+      var buttons = accordion.querySelectorAll('button[data-target]');
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var targetSelector = btn.getAttribute('data-target');
+          var target = document.querySelector(targetSelector);
+          if (!target) return;
+
+          var isOpen = target.classList.contains('show');
+
+          buttons.forEach(function (otherBtn) {
+            var otherTarget = document.querySelector(otherBtn.getAttribute('data-target'));
+            if (otherTarget) {
+              otherTarget.classList.remove('show');
+            }
+            otherBtn.classList.add('collapsed');
+            otherBtn.setAttribute('aria-expanded', 'false');
+          });
+
+          if (!isOpen) {
+            target.classList.add('show');
+            btn.classList.remove('collapsed');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
